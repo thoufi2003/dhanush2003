@@ -25,10 +25,9 @@
             content: "";
             position: fixed;
             inset: 0;
-            background-image: url('background.jpg'); /* <-- replace with your image file */
+            background-image: url('background2.jpg'); /* <-- replace with your image file */
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
             background-repeat: no-repeat;
             opacity: 0.3; /* 50% transparency */
             z-index: 0;
@@ -426,10 +425,22 @@
 
         /* ===== RESPONSIVE DESIGN ===== */
         @media (max-width: 768px) {
-            body::before {
-                background-attachment: scroll;
-                background-size: cover;
-                background-position: center;
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .quote {
+                font-size: 1.3rem;
+                padding: 30px 20px;
+            }
+            
+            .motivation-grid,
+            .gifts-container {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -539,7 +550,8 @@
         <div class="hero-content">
             <h1>Happy 20th Birthday<br>My Dearest Sornapriya 💕</h1>
             <p>You make my world shine brighter every single day ✨
-           <p> Pappu kutty You are the reason my world feels so full of color and joy.</p>
+           <p> Pappu kutty You are the reason my world feels so full of color and joy.
+</p>
             </p>
             <button class="surprise-btn" onclick="startSurprise()">Click to Begin the Surprise 🎁</button>
         </div>
