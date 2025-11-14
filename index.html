@@ -20,6 +20,19 @@
             overflow-x: hidden;
             position: relative;
         }
+        /* Background image with 50% transparency */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-image: url('background.jpg'); /* <-- replace with your image file */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.3; /* 50% transparency */
+            z-index: 0;
+            pointer-events: none;
+        }
 
         /* ===== FLOATING HEARTS ANIMATION ===== */
         .heart {
@@ -536,7 +549,9 @@
     <section class="hero" id="heroSection">
         <div class="hero-content">
             <h1>Happy 20th Birthday<br>My Dearest Sornapriya 💕</h1>
-            <p>You make my world shine brighter every single day ✨</p>
+            <p>You make my world shine brighter every single day ✨
+           <p> Pappu kutty You are the reason my world feels so full of color and joy.</p>
+            </p>
             <button class="surprise-btn" onclick="startSurprise()">Click to Begin the Surprise 🎁</button>
         </div>
     </section>
@@ -623,8 +638,8 @@
     <!-- Photo Gallery Section -->
     <section class="content-section" id="photoSection">
         <h2 class="section-title">Our Beautiful Moments Together 📸💕</h2>
-        
-
+        <div class="photo-gallery">
+            <div class="photo-frame">
                 <!-- Uncomment below and comment above when you add your image -->
                 <img src="image1.jpg" alt="Beautiful moment with Sornapriya"> 
                 <p class="photo-caption">Every picture with you is a treasure 💖</p>
@@ -636,6 +651,19 @@
                 <img src="image2.jpg" alt="Another precious moment"> 
                 <p class="photo-caption">You make every moment unforgettable ✨</p>
             </div>
+             <div class="photo-frame">
+                <!-- Replace 'image2.jpg' with your second photo -->
+                <!-- Uncomment below and comment above when you add your image -->
+                <img src="image3.jpg" alt="Another precious moment"> 
+                <p class="photo-caption">You are my sweet girl like this baby ✨</p>
+            </div>
+            <div class="photo-frame">
+                <!-- Replace 'image2.jpg' with your second photo -->
+                <!-- Uncomment below and comment above when you add your image -->
+                <img src="image4.jpg" alt="Another precious moment"> 
+                <p class="photo-caption">Such a beautiful my girl ✨</p>
+            </div>
+            
         </div>
     </section>
 
