@@ -28,6 +28,7 @@
             background-image: url('background.jpg'); /* <-- replace with your image file */
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             background-repeat: no-repeat;
             opacity: 0.3; /* 50% transparency */
             z-index: 0;
@@ -425,22 +426,10 @@
 
         /* ===== RESPONSIVE DESIGN ===== */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .section-title {
-                font-size: 2rem;
-            }
-            
-            .quote {
-                font-size: 1.3rem;
-                padding: 30px 20px;
-            }
-            
-            .motivation-grid,
-            .gifts-container {
-                grid-template-columns: 1fr;
+            body::before {
+                background-attachment: scroll;
+                background-size: cover;
+                background-position: center;
             }
         }
 
